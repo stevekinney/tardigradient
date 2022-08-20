@@ -1,0 +1,17 @@
+{
+  "name": "tardigradient",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "serve",
+    "lint": "prettier --check --plugin-search-dir=. . && eslint .",
+    "format": "prettier --write --plugin-search-dir=. ."
+  },
+  "devDependencies": {
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.6.2",
+    "serve": "^14.0.1"
+  },
+  "type": "module"
+}
