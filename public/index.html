@@ -36,10 +36,8 @@
     <meta property="og:type" content="website" />
     <style>
       :root {
-        --start-height: 80%;
-        --start-width: calc(var(--start-height) * 0.8);
-        --end-height: calc(var(--start-height) * 0.8);
-        --end-width: calc(var(--end-height) * 0.8);
+        --tardigrade-height: 80%;
+        --tardigrade-width: calc(var(--tardigrade-height) * 0.8);
       }
 
       main {
@@ -68,22 +66,19 @@
 
       @keyframes size {
         0% {
-          width: var(--start-width);
-          height: var(--start-height);
+          transform: scale(1);
         }
         50% {
-          width: var(--end-width);
-          height: var(--end-height);
+          transform: scale(0.8);
         }
         100% {
-          width: var(--start-width);
-          height: var(--start-height);
+          transform: scale(1);
         }
       }
 
       .tarigrade {
-        width: var(--start-width);
-        height: var(--start-height);
+        width: var(--tardigrade-width);
+        height: var(--tardigrade-height);
         fill: url(#tardigradient);
         animation: size 15s ease infinite;
       }
